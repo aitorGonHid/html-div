@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mosaico</title>
+        <style type="text/css">
+            body {
+                background-image: url("img/ac.jpg");
+            }
+            .row{
+                display: flex;
+            }
+            .cell {
+                width: 200px;
+                height: 200px;
+                margin:10px;
+                padding: 15px;
+                border: 1px solid black;
+                box-sizing:border-box;
+            }
+            .cell11{
+                background-image: url("img/back_mantel.jpg");
+            }
+            .cell12{
+                background-image: url("img/back_mantel.jpg");
+                background-clip: content-box;
+            }
+            .cell13{
+                background-image: url("img/back_mantel.jpg");
+                background-size: 100% 100%; /*Tambien serviria 100% al ser cuadrada o cover */
+            }
+            .cell14{
+                background-image: url("img/back_mantel.jpg");
+                background-size: 100% 100%; /*Tambien serviria 100% al ser cuadrada o cover */
+                background-clip: content-box;
+            }
+            .cell21{
+                background-image: url("img/dh.jpg");
+                background-size: cover;
+            }
+            .cell22{
+                background-image: url("img/dh.jpg");
+                background-clip: content-box;
+                background-size: cover;
+                border: 20px solid white;
+                padding: 0px;
+            }
+            .cell23{
+                background-color: white;
+                padding: 0;
+                border: 0;
+            }
+            .cell23inner{
+                background-image: url("img/dh_2.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+            }
+            .cell24{
+                background-color: white;
+                padding: 0;
+                border: 0;
+            }
+            .cell24inner{
+                background-image: url("img/dh_3.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+            }
+            .cell31{
+                background: linear-gradient(to right, rgb(212, 245, 137) 0%, rgba(82, 79, 79) 100%);
+            }
+            .cell32{
+                background: linear-gradient(to bottom, rgb(240, 210, 154) 0%, brown 65%, rgba(165, 42, 42, 1) 50%, rgb(139, 101, 31) 100% );
+            }
+            .cell33{
+                background: linear-gradient(to top, rgb(75, 190, 75) 0%, white 100%);
+            }
+            .cell34{
+                background: linear-gradient(to top, green 0%, transparent);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="cell cell11"></div>
+            <div class="cell cell12"></div>
+            <div class="cell cell13"></div>
+            <div class="cell cell14"></div>
+        </div>
+        <div class="row">
+            <div class="cell cell21"></div>
+            <div class="cell cell22"></div>
+            <div class="cell cell23">
+                <div class="cell cell23inner"></div>
+            </div>
+            <div class="cell cell24">
+                <div class="cell cell24inner"></div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="cell cell31"></div>
+            <div class="cell cell32"></div>
+            <div class="cell cell33"></div>
+            <div class="cell cell34"></div>
+
+        </div>
+    </body>
+</html>
